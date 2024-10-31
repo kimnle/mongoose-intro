@@ -21,3 +21,11 @@ app.get("/", (request, response) => {
         message: "Hello world!!"
     });
 });
+
+// Server app configuration is finished by this point
+
+// Export the app so that other files can control when the server
+// starts and stops
+module.exports = {
+    app
+}
